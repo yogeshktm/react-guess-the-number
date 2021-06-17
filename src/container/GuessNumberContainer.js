@@ -8,7 +8,7 @@ function GuessNumberContainer() {
   const [gameState, setGameState] = useState("");
   const [attempts, setAttempts] = useState(0);
   const [prevGuesses, setPrevGuesses] = useState([]);
-  const [maxAttempts, setMaxAttempts] = useState(8);
+  const [maxAttempts] = useState(8);
   useEffect(() => {
     generateRandomNumber(100);
   }, []);
