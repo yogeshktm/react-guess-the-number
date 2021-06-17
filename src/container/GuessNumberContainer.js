@@ -13,19 +13,16 @@ function GuessNumberContainer() {
     generateRandomNumber(100);
   }, []);
   const getInput = (event) => {
-    console.log(event.target.value);
     SetGuessedNumber(parseInt(event.target.value));
   };
   const generateRandomNumber = (max) => {
     let randomNum = Math.floor(Math.random() * max);
     setRandomNumber(randomNum);
-    console.log(randomNum);
   };
   const checkNumber = (e) => {
     e.preventDefault();
     setAttempts(attempts + 1);
     setPrevGuesses([...prevGuesses, GuessedNumber]);
-    console.log(GuessedNumber, randomNumber);
     if (GuessedNumber === randomNumber) {
       setMessage("Bingo you got it");
       setGameState(1);
