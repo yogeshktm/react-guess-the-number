@@ -1,12 +1,52 @@
-.App {
-  text-align: center;
+:root {
+  --background: #b55189;
+  --text-color: #fff;
+  --success-text-color: #4eff4e;
+  --error-text-color: ;
 }
 
+.App {
+  max-width: 400px;
+  margin: 0 auto;
+  background: var(--background);
+  min-height: 100vh;
+  color: var(--text-color);
+  text-align: center;
+}
+.main-header {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.main-header p {
+  font-size: 13px;
+  margin-top: 0;
+}
+.text-wrapper {
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.guess-form {
+  display: flex;
+}
+.guess-form input {
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.btn {
+  -webkit-appearance: none;
+  border: 0;
+  background: #fb8dca;
+  color: #fff;
+  padding: 15px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
