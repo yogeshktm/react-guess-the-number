@@ -76,3 +76,10 @@
     transform: rotate(360deg);
   }
 }
+.top-content {
+  background: #c177a1;
+  padding: 5px;
+}
+.top-content a{ 
+  color: #fff;
+}
